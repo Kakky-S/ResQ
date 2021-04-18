@@ -1,0 +1,283 @@
+.c-section {
+  height: 930px;
+  width: 100%;
+  overflow: hidden;
+}
+.c-flex {
+  display: flex;
+  height: 100vh;
+}
+
+.c-box {
+  /* background: rgba(107, 184, 255, 0.1); */
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0 1rem;
+  width: 80%;
+  order: 1;
+}
+
+.c-color {
+  background: rgba(107, 184, 255, 0.1);
+}
+
+.c-grid__answer {
+  display: flex;
+  align-items: center;
+  height: 192px;
+  margin-top: 40px;
+  justify-content: space-around;
+  border-radius: 8px;
+  background: rgba(107, 184, 255, 0.1);
+}
+
+.p-chat__bubble {
+  background: #fff;
+  border-radius: 4px;
+  border: solid 1px #6bb8ff;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin-right: 1rem;
+  max-width: 80%;
+  width: auto;
+  letter-spacing: 6px;
+}
+
+.p-chat__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 0 !important;
+}
+
+.p-chat__reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-right: 0 !important;
+}
+
+.p-question__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.p-question__description {
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.7;
+}
+
+/* ＝＝＝＝＝
+HOMEのスタイル
+＝＝＝＝＝＝ */
+.h-container {
+  background-image: url(../img/docter.jpg);
+  background-size: cover;
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+}
+
+.h-header {
+  background-color: #6bb8ff;
+  padding: 50px;
+}
+
+.h-title {
+  color: #eee;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.h-inner {
+  text-align: center;
+  /* margin-top: 80px; */
+  width: 500px;
+  height: 500px;
+  margin: 140px auto 0;
+  background-color: rgba(107, 184, 255, 0.3);
+  box-shadow: 22px 29px 83px #888;
+  border-radius: 8px;
+}
+
+.h-text {
+  color: #eee;
+  font-size: 3rem;
+  padding-top: 140px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.h-button {
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 1;
+  color: #eee;
+  font-weight: bold;
+  letter-spacing: 6px;
+  padding: 24px 56px;
+  border-radius: 16px;
+  border: none;
+  background-color: rgba(251, 197, 44, 0.8);
+  margin-top: 80px;
+}
+.h-button:hover {
+  background-color: rgba(251, 197, 44, 0.5);
+}
+
+.nav-conteiner {
+  order: 2;
+  width: 20%;
+  text-align: center;
+}
+
+.c-List {
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.c-ListItem {
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  display: block;
+}
+
+.c-ListItem a {
+  text-decoration: none;
+  padding: 20px;
+  color: #333;
+}
+
+.c-ListItem:hover {
+  background-color: rgba(107, 184, 255, 0.5);
+  color: #fff;
+}
+
+.c-NavButton {
+  display: inline-block;
+  border: 3px solid #ffb549;
+  background-color: inherit;
+  font-size: 20px;
+  line-height: 1;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+.c-NavButton:hover {
+  background-color: #ffb549;
+  color: #fff;
+}
+
+.answerTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 80px;
+  letter-spacing: 6px;
+  margin-bottom: 80px;
+}
+
+.over {
+  width: 100%;
+}
+
+.answerSymptomatology {
+  line-height: 2;
+  display: block;
+  margin: 0 330px 80px;
+  text-align: center;
+  padding: 60px 0;
+  border: 2px solid #6bb8ff;
+  font-size: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.symptoms {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.symptomsList {
+  list-style: none;
+}
+
+.symptomsListItemTitle {
+  text-align: center;
+}
+
+.secondTitle {
+  font-size: 24px;
+  border: 2px solid #6bb8ff;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 20px 50px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.symptomsTextSpan {
+  font-size: 24px;
+  border-bottom: 2px solid #ffb549;
+  display: block;
+  margin-right: 800px;
+  margin-bottom: 30px;
+}
+
+.symptomsTextEm {
+  font-style: initial;
+  font-weight: bold;
+}
+
+.symptomsText {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.symptomsListItem {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.overflow {
+  overflow: auto;
+  margin-bottom: 230px;
+  padding: 0 32px;
+}
+
+.symptomsSubList {
+  list-style: disc;
+}
+
+.symptomsSubListItem {
+  line-height: 2.5;
+}
+
+.searchButton {
+  background-color: #ffb549;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  font-weight: bold;
+  padding: 17px 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+.searchButton:hover {
+  background-color: rgba(251, 197, 44, 0.5);
+}
