@@ -1,3 +1,5 @@
+
+![卒制発表用01 001](https://user-images.githubusercontent.com/83205014/116044248-a9018680-a6ab-11eb-814c-926b7b55a441.jpeg)
 # 制作物
 ### 整形外科・整骨院に特化した一次診察アプリ
 
@@ -40,9 +42,9 @@ HTML、CSS、JavaScript、React、Material-UI、Firebase
 メルプ自動予測が一番開発内容の被るが、内科と整形外科で棲み分けができる。他にも、色々とWebアプリはあるが、業者向けが多く一般向けがない
 
 
-[image:AA75F9AA-2FB3-4192-AB8D-B723DDFC2FB8-43159-0000B9B285C8A388/卒制発表用01.001.jpeg]
+![卒制発表用01 001](https://user-images.githubusercontent.com/83205014/116044220-a0a94b80-a6ab-11eb-8fd1-140607e62726.jpeg)
 
+![卒制発表用02 001](https://user-images.githubusercontent.com/83205014/116044298-b61e7580-a6ab-11eb-85c2-bc758137b023.jpeg)
 
-[image:61B4D9B3-028B-43E0-9B71-D3002FFB9C98-43159-0000B9B693DC2B00/卒制発表用02.001.jpeg]
 
 ##  製作物動画
