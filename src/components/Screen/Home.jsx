@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div className="h-container">
       <header className="h-header">
-        <p className="h-title">ResQ</p>
+        <p className="h-title en">ResQ</p>
       </header>
         <div className="h-inner">
         <p className="h-text">あなたの症状は？</p>

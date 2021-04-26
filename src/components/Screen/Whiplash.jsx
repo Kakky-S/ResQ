@@ -6,13 +6,13 @@ export default class Whiplash extends React.Component  {
 
   <section className="c-section" >
     <header className="h-header">
-      <p className="h-title">ResQ</p>
+      <p className="h-title en">ResQ</p>
     </header>
     <div className="c-flex">
       <div className="nav-conteiner">
         <nav className="c-nav">
           <ul className="c-List">
-            <li className="c-ListItem"> <a href="/">HOME</a></li>
+            <li className="c-ListItem en"> <a href="/">HOME</a></li>
             <li className="c-ListItem"><a href="#">お気に入り</a></li>
             <li className="c-ListItem"><a href="#">診察履歴</a></li>
           </ul>

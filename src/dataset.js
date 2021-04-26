@@ -229,44 +229,133 @@ const defaultDataset = {
         ],
         question: "吐き気や吐く、めまいなどの症状がありますか？",
     },
-    "other_jobs": {
-        answers: [
-            {content: "問い合わせる", nextId: "contact"},
-            {content: "最初の質問に戻る", nextId: "init"}
-        ],
-        question: "その他についてですね。コチラからお問い合わせできます。",
-    },
-    "consultant": {
-        answers: [
-            {content: "YouTubeで動画を見る", nextId: "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
-            {content: "学習コミュニティについて知りたい", nextId: "community"},
-            {content: "最初の質問に戻る", nextId: "init"}
-        ],
-        question: "トラハックは普段からYouTubeでキャリアについて発信しています。また、僕が運営するエンジニア向け学習コミュニティ内でも相談に乗っていますよ。",
-    },
-    "community": {
-        answers: [
-            {content: "どんな活動をしているの？", nextId: "community_activity"},
-            {content: "コミュニティに参加したい", nextId: "https://torahack.web.app/community/"},
-            {content: "最初の質問に戻る", nextId: "init"}
-        ],
-        question: "2020年3月から学習コミュニティを始めました！🎉Webエンジニアへの転職を目指す人向けに、プログラミングを教えたりキャリアの相談に乗っています。",
-    },
-    "community_activity": {
-        answers: [
-            {content: "さらに詳細を知りたい", nextId: "https://youtu.be/tIzE7hUDbBM"},
-            {content: "コミュニティに参加したい", nextId: "https://torahack.web.app/community/"},
-            {content: "最初の質問に戻る", nextId: "init"}
-        ],
-        question: "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。",
-    },
-    "dating": {
-        answers: [
-            {content: "DMする", nextId: "answer"},
-            {content: "最初の質問に戻る", nextId: "init"}
-        ],
-        question: "まずは一緒にランチでもいかがですか？DMしてください😘",
-    },
-}
-
+    "shoulder": {
+    answers: [
+      { content: "はい", nextId: "shoulder01" },
+      { content: "いいえ", nextId: "shoulder06" },
+      { content: "前の質問に戻る", nextId: "init" }
+    ],
+    question: "左右どちらかの方がこったり張ったり、痛みますか？"
+  },
+  "shoulder01": {
+    answers: [
+      { content: "はい", nextId: "shoulder02" },
+      { content: "いいえ", nextId: "shoulder04" },
+      { content: "前の質問に戻る", nextId: "shoulder" }
+    ],
+    question: "それは左肩ですか？"
+  },
+  "shoulder02": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 胸膜炎や狭心症、心筋梗塞
+      { content: "いいえ", nextId: "shoulder03" },
+      { content: "前の質問に戻る", nextId: "shoulder01" }
+    ],
+    question: "胸の痛みやしめつけられるような感じがありますか？"
+  },
+  "shoulder03": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 膵炎や胃の病気
+      { content: "いいえ", nextId: "shoulder06" },
+      { content: "前の質問に戻る", nextId: "shoulder02" }
+    ],
+    question: "みぞおちの痛みや不快感を伴いますか？"
+  },
+  "shoulder04": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 胆石症食道炎
+      { content: "いいえ", nextId: "shoulder05" },
+      { content: "前の質問に戻る", nextId: "shoulder01" }
+    ],
+    question: "主に右肩で、背中と腹部の痛みを伴いますか？"
+  },
+  "shoulder05": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 肺炎・呼吸器の痛み
+      { content: "いいえ", nextId: "shoulder06" },
+      { content: "前の質問に戻る", nextId: "shoulder04" }
+    ],
+    question: "肩の深部が痛み、咳をすると激しく痛みますか？"
+  },
+  "shoulder06": {
+    answers: [
+      { content: "はい", nextId: "shoulder7" },
+      { content: "いいえ", nextId: "headache_13" },
+      { content: "前の質問に戻る", nextId: "shoulder" }
+    ],
+    question: "最近、怪我をしましたか？"
+  },
+  "shoulder07": {
+    answers: [
+      { content: "はい", nextId: "shoulder08" },
+      { content: "いいえ", nextId: "shoulder09" },
+      { content: "前の質問に戻る", nextId: "shoulder06" }
+    ],
+    question: "しびれがありますか？"
+  },
+  "shoulder08": {
+    answers: [
+      { content: "はい", nextId: "#" }, // リュックサック麻痺
+      { content: "いいえ", nextId: "shoulder10" },
+      { content: "前の質問に戻る", nextId: "shoulder07" }
+    ],
+    question: "リュックサックやランドセルなど、長時間肩を圧迫することをしましたか？"
+  },
+  "shoulder09": {
+    answers: [
+      { content: "はい", nextId: "headache_00" },
+      { content: "いいえ", nextId: "headache_13" },
+      { content: "前の質問に戻る", nextId: "init" }
+    ],
+    question: "左右どちらかの方がこったり張ったり、痛みますか？"
+  },
+  "shoulder10": {
+    answers: [
+      { content: "はい", nextId: "shoulder11" },
+      { content: "いいえ", nextId: "#" }, // 検査してください
+      { content: "前の質問に戻る", nextId: "shoulder08" }
+    ],
+    question: "上を向いて、しびれるほうに首を傾け、真上から押すと、肩や腕にしびれが強くなりますか？"
+  },
+  "shoulder11": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 心筋梗塞の疑いあり、専門医へ
+      { content: "いいえ", nextId: "shoulder12" },
+      { content: "前の質問に戻る", nextId: "shoulder10" }
+    ],
+    question: "しびれ以外に内科的症状がありますか？"
+  },
+  "shoulder12": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 頚骨後縦靭帯骨化症(OPLL)
+      { content: "いいえ", nextId: "shoulder13" },
+      { content: "前の質問に戻る", nextId: "shoulder11" }
+    ],
+    question: "階段を降りる時、スムーズに降りられなかったり、下り坂で足がもつれたりしますか？また尿の調子がよくないですか？"
+  },
+  "shoulder13": {
+    answers: [
+      { content: "はい", nextId: "#" }, // 変形性頚椎症
+      { content: "いいえ", nextId: "#" },// 頚椎椎間板ヘルニア
+      { content: "前の質問に戻る", nextId: "shoulder12" }
+    ],
+    question: "50才以上ですか？"
+  },
+  "waist": {
+    answers: [
+      { content: "はい", nextId: "headache_00" },
+      { content: "いいえ", nextId: "headache_13" },
+      { content: "前の質問に戻る", nextId: "init" }
+    ],
+    question: "吐き気や吐く、めまいなどの症状がありますか？"
+  },
+  "knee": {
+    answers: [
+      { content: "はい", nextId: "headache_00" },
+      { content: "いいえ", nextId: "headache_13" },
+      { content: "前の質問に戻る", nextId: "init" }
+    ],
+    question: "吐き気や吐く、めまいなどの症状がありますか？"
+  },
+};
 export default defaultDataset
