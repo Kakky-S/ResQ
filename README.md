@@ -42,9 +42,10 @@ HTML、CSS、JavaScript、React、Material-UI、Firebase
 メルプ自動予測が一番開発内容の被るが、内科と整形外科で棲み分けができる。他にも、色々とWebアプリはあるが、業者向けが多く一般向けがない
 
 
-![卒制発表用01 001](https://user-images.githubusercontent.com/83205014/116044220-a0a94b80-a6ab-11eb-8fd1-140607e62726.jpeg)
-
-![卒制発表用02 001](https://user-images.githubusercontent.com/83205014/116044298-b61e7580-a6ab-11eb-85c2-bc758137b023.jpeg)
+![ResQ01](https://user-images.githubusercontent.com/83205014/116051020-1f55b700-a6b3-11eb-9764-cb2a23e68ee7.jpeg)
+![ResQ02](https://user-images.githubusercontent.com/83205014/116051066-2b417900-a6b3-11eb-8109-bf3bc36f34ee.jpeg)
 
 
 ##  製作物動画
+
+https://user-images.githubusercontent.com/83205014/116050981-106f0480-a6b3-11eb-92c6-b03e25b1acd7.MP4
